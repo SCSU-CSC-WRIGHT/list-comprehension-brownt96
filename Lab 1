@@ -1,0 +1,20 @@
+def lab_1():
+    #asking the user how many scores they need to calculate an average for
+    num=int(input("Enter # of test scores: "))
+    scores=[]
+    for i in range(num):
+        score= int(input("Enter a score: "))
+        scores.append(score)
+    avg=sum(scores)/len(scores)
+    if avg>90:
+        print (avg); print("A")
+    elif avg >80 and avg<90:
+        print (avg); print("B")
+    elif avg >70 and avg<80:
+        print(avg); print("C")
+    elif avg> 60 and avg<70:
+        print(avg); print ("D")
+    elif avg>0 and avg <60:
+        print(avg); print ("F")
+
+lab_1()
