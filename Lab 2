@@ -1,0 +1,38 @@
+def lab_2alt():
+    even = 0
+    odd = 0
+    x = (int(input("How many numbers need to be filtered?: ")))
+    numbers=[]
+    #creating a list of #'s to be filtered
+    for i in range(x):
+      number=(int(input("Enter a number: ")))  
+      numbers.append(number)
+    #finding if a number in the list is even or odd
+    for i in numbers:
+        if (i%2) == 1:
+            odd+=1; 
+        elif (i%2) == 0:
+            even+=1; 
+    print ("# of even numbers :")
+    print (even)
+    print ("# of odd numbers: ")
+    print (odd)
+
+def lab_2():
+        even = 0
+        odd = 0
+        nums = input("Enter more than one number: ")
+        nums_list = nums.split(' ')
+
+        for num in nums_list:
+            if int(num)%2 == 0:
+                even+=1; 
+            elif int(num)%2 == 1:
+                odd+=1
+
+        print ("# of even numbers: ") 
+        print(even)
+        print ("# of odd numbers: ")
+        print(odd)
+    
+lab_2()
